@@ -1,5 +1,5 @@
 # 🎶 Spotify Clone 🎧
-It's a repository of Spotify Clone.
+It's a repository of Spotify System Clone.
 
 <a href="https://github.com/IsaacAlves7/spotify-clone"><img src="https://miro.medium.com/max/3842/1*-ggtLghCsJXwJht2h4aMpg.png" width="1070"></a>
 
