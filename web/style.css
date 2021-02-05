@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --blue: #2D46B9;
+    --green: #1ED760;
+    --medium-dark-green:#1DB954;
+    --white: #fff;
+    --medium-dark-white:#c8c8c8;
+    --gray:#8f8f8f;
+    --light-black:#222326;;
+    --black: #0c0c0c;
+}
+
+::selection{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+body{
+    background-color: var(--blue);
+    margin: 0;
+}
+
+header{
+    background-color: var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%; min-height: 12px;
+    z-index: 1020;
+}
+
+header nav{
+    display: flex;
+    right: 0;
+    left: 0;
+}
+
+header nav li{
+    list-style: none;
+    margin: 7px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    font-family: none;
+    color: var(--white);
+}
+
+header nav li a{
+    color: var(--white);
+    font-weight: normal;
+    text-decoration: none;
+    padding: 28px 17px;
+}
+
+header nav li a.dark-white{
+    color: var(--medium-dark-white);
+}
+
+header nav li a:hover{
+    color: var(--green);
+}
+
+.logo{
+    height: 40px;
+    cursor: pointer;
+}
+
+section{
+    height: 100vh;
+    text-align: center;
+    background-image: url('/web/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 46% 8%;
+    background-size: 167%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1{
+    color: var(--green);
+    font-weight: bold;
+    font-size: 107px;
+    text-align: center;
+    letter-spacing: -0.04em !important;
+}
+
+section h4{
+    color: var(--green);
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+section a{
+    text-decoration: none;
+    color: var(--blue);
+    background-color: var(--green);
+    padding: 16px 40px 16px;
+    letter-spacing: 1.4px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+section a:hover{
+    background-color: var(--white);
+    transition: 0.4s;
+}
+
+footer{
+    background-color: var(--black);
+}
+
+footer nav .topic{
+    color: var(--gray);
+}
+
+footer nav li{
+    color: var(--white);
+}
+
+footer .down li{
+    color: var(--medium-dark-white);
+    font-size: 12px;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width:800px){
+
+section{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+}
